@@ -8,7 +8,7 @@ RuhohSpec: "2.1"
 # Used for things like RSS that need the full URL to a given resource.
 # This DOES NOT affect any of your paths or links in any way.
 # This DOES NOT configure domain mapping. See post2.ruhoh.com for hosting options.
-production_url: "http://sample.com"
+production_url: "http://gregghz.com"
 
 # Intelligently prepends all urls in the system with the given base_path.
 # This allows you to host your blog in a subdirectory of a given website.
@@ -38,13 +38,13 @@ posts:
   latest: 5
   rss:
     enable: true
-    limit: 5
+    limit: 10
     # The url to prepend to the rss.xml feed, e.g.: /posts/rss.xml
     # Defaults to: "/<resource_name>/"
     # Always start with a forward slash, as ruhoh will internally respect any base_path you set.
     # url: "/posts/"
   paginator:
-    enable: false
+    enable: true
     # The url your paginated pages will be located: e.g /posts/index/1, /posts/index/2, /posts/index/3
     # Always start with a forward slash, as ruhoh will internally respect any base_path you set.
     url: "/posts/index/"
@@ -74,7 +74,7 @@ widgets :
   analytics :
     use : google
     # -- config for google --
-    tracking_id : 'UA-123-12'
+    tracking_id : 'UA-23998449-1'
 
     # -- config for getclicky  --
     # site_id :
@@ -83,7 +83,7 @@ widgets :
     use : disqus
     enable : true
     # -- config for disqus --
-    short_name : jekyllbootstrap # Change This!
+    short_name : gregghz # Change This!
 
     # -- config for livefyre --
     # site_id : 123
