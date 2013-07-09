@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+ruhoh compile
+rsync --delete -r --progress ./compiled/* patridv4@gregghz.com:/home4/patridv4/public_html/gregghz/
