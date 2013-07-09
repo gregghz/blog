@@ -3,6 +3,7 @@ title: 'Two Approaches to a REST API in Go'
 date: '2013-05-22'
 description:
 tags: [golang, reflection, REST]
+categories: examples
 ---
 
 Below I will outline two approaches to writing a flexible REST API in Go. The first approach will use Go's reflect package to allow for the dynamic creation of URLs based on which methods are present. It will dynamically lookup method names when a request comes in and it will simply return a 404 error to a user if they make a request to an unknown method. The second approach will will sacrifice a bit of the dynamic nature of the first approach (you have to explicitly register URLs) but it will typically be much faster and I feel that the code is much more clear.
